@@ -1,4 +1,4 @@
-package Exercicios;
+package Pratica.Exercicio1;
 
 public class Nome {
 
