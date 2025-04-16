@@ -25,6 +25,10 @@ public class Calculadora {
                 resultado = numero1 - numero2;
                 break;
             case "/":
+                if (numero2 == 0) {
+                    System.out.println("Erro: Nao e possivel dividir por zero.");
+                    return;
+                }
                 resultado = numero1 / numero2;
                 break;
             case "x":
@@ -39,5 +43,7 @@ public class Calculadora {
         System.out.println("");
         System.out.print("Resultado: ");
         System.out.println(resultado);
+        
+        sc.close();
     }
 }
