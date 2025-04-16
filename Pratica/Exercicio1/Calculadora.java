@@ -1,12 +1,19 @@
 package Pratica.Exercicio1;
 
+import java.util.Scanner;
+
 public class Calculadora {
     public static void main(String[] args) {
-        args = new String[] { "10", "5", "+" };
+        Scanner sc = new Scanner(System.in);
 
-        double numero1 = Double.parseDouble(args[0]);
-        double numero2 = Double.parseDouble(args[1]);
-        String operacao = args[2];
+        System.out.print("Digite o primeiro numero: ");
+        double numero1 = sc.nextDouble();
+
+        System.out.print("Digite o segundo numero: ");
+        double numero2 = sc.nextDouble();
+
+        System.out.print("Digite a operacao desejada (+, -, /, x): ");
+        String operacao = sc.next();
 
         double resultado = 0;
 
@@ -24,7 +31,7 @@ public class Calculadora {
                 resultado = numero1 * numero2;
                 break;
             default:
-                System.out.println("Erro: Operacao invalida. Use +, -, / ou x.");
+                System.out.println("Erro: Operacao invalida. Escolha um dos operadoes a seguir +, -, / ou x.");
                 return;
         }
 
