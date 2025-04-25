@@ -2,7 +2,7 @@ package Pratica.Exercicio2;
 
 import java.util.Scanner;
 
-public class Equacao {
+public class Equacao2o {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
