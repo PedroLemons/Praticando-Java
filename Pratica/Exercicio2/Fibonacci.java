@@ -10,6 +10,7 @@ public class Fibonacci {
         System.out.println("");
         System.out.println("-------- INICIANDO O PROGRAMA --------");
 
+
         System.out.print("Digite um numero inteiro positivo: ");
         int limite = scanner.nextInt();
 
